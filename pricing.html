@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brighton Photography Services</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body class="d-flex flex-column min-vh-100 bg-light">
+    <!-- using navbar from bootstrap to navigate between index.html, pricing.html, and contact.html. -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./images/logo.jpg" 
+          alt="Brighton Photography" 
+        />
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html" aria-selected="false"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pricing.html" aria-selected="true"
+              >Services</a>
+          </li>
+          
+          
+        </ul>
+      </div>
+    </nav>
+
+    <!-- table with packages that are offered for photography services. -->
+
+    <div class="jumbotron jumbotron-fluid bg-light">
+      <div class="container">
+        <h1 class="display-4">We offer several packages to choose from!</h1>
+      </div>
+    </div>
+    
+    <table class="table table-striped text-center table-responsive-md m-auto">
+      <thead>
+        <tr>
+          <th scope="col"> </th>
+          <th scope="col">Portrait</th>
+          <th scope="col">Family Photos</th>
+          <th scope="col">Landscape</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Session Length:</th>
+          <td>1 Hour Session</td>
+          <td>2 Hour Session</td>
+          <td>Per Photo</td>
+        </tr>
+        <tr>
+          <th scope="row">Location:</th>
+          <td>Studio</td>
+          <td>Location within 2 hour drive</td>
+          <td>Based on Print</td>
+        </tr>
+        <tr>
+          <th scope="row">Price</th>
+          <td>$150</td>
+          <td>$300</td>
+          <td>Varies Depending on Photo</td>
+        </tr>
+        <tr>
+          <th scope="row"> </th>
+          <!-- insert modal into the table -->
+          <td>
+            <button type="button" class="btn btn-primary" data-toggle="modal" 
+              data-target="#exampleModal" data-whatever="@portrait"
+              >Order Portrait!
+            </button>
+          </td>
+          <td>
+            <button type="button" class="btn btn-primary" data-toggle="modal" 
+              data-target="#exampleModal" data-whatever="@family"
+              >Order Family Photos!
+            </button>
+          </td>
+          <td>
+            <button type="button" class="btn btn-primary" data-toggle="modal" 
+              data-target="#exampleModal" data-whatever="@landscape"
+              >Order Landscape Photos!
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Modal for ordering a photo requesting name/email address and a message to send  to order photos! -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="your-name" class="col-form-label">Your name:</label>
+                <input type="text" class="form-control" id="your-name">
+              </div>
+              <div class="form-group">
+                <label for="your-email" class="col-form-label">Your email:</label>
+                <input type="text" class="form-control" id="your-email">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Additional navigation options at bottom of screen! -->
+    <footer class="text-center text-white bg-secondary mt-auto">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link disabled text-white" href="#">Brighton Photography ©2020</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./pricing.html">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">Created by Colton Brighton</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

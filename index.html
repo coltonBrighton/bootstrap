@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brighton Photography</title>
+    <!-- link to bootstrap -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body class="bg-white d-flex flex-column min-vh-100">
+    <!-- using navbar from bootstrap to navigate between index.html, pricing.html, and contact.html. -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./images/logo.jpg" 
+          alt="Brighton Photography Logo" 
+        />
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pricing.html">Services</a>
+          </li>
+        </ul>
+        
+      </div>
+      
+    </nav>
+    
+    <div class="jumbotron jumbotron-fluid text-center bg-white">
+      <div class="container">
+        <hr>
+        <h1 class="display-4">Brighton Photography</h1>
+        <h2 class="lead">Capturing nature is how we nuture</h2>
+        <hr>
+      </div>
+    </div>
+
+    <!-- using a grid to place images -->
+    <div class="row no-gutters">
+      <div class="col-md-3">
+        <div>
+          <img
+            src="./images/dandelion.jpg"
+            class="rounded img-fluid img-thumbnail bg-dark"
+            alt="dandelion with sunset in background"
+          />
+        </div>
+
+        <div>
+          <img
+            src="./images/doggy.jpg"
+            class="rounded img-fluid img-thumbnail bg-dark"
+            alt="dandelion with sunset in background"
+          />
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div>
+          <img
+            src="./images/squirrel.jpg"
+            class="rounded img-fluid img-thumbnail bg-dark"
+            alt="dandelion with sunset in background"
+          />
+        </div>
+
+        <div>
+          <img
+            src="./images/landscape.jpg"
+            class="rounded img-fluid img-thumbnail bg-dark"
+            alt="dandelion with sunset in background"
+          />
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div>
+          <img
+          src="./images/sunset.jpg"
+          class="rounded img-fluid img-thumbnail bg-dark"
+          alt="sun sets grdually behind mountains."
+        />
+        </div>
+        <div>
+          <img
+            src="./images/waterfall.jpg"
+            class="rounded img-fluid img-thumbnail bg-dark"
+            alt="image of a waterfall"
+          />
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div>
+          <img
+            src="./images/flowers.jpg"
+            class="rounded img-fluid img-thumbnail bg-dark"
+            alt="image of a hand holding flowers with a beautiful mountain landscape in the background"
+          />
+        </div>
+        <div>
+          <img
+            src="./images/city-lights.jpg"
+            class="rounded img-fluid img-thumbnail bg-dark"
+            alt="Photo of city at night through a plane window"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- additonal nav options at the bottom of screen -->
+
+    <footer class="text-center bg-secondary mt-auto">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link disabled text-white" href="#">Brighton Photography ©2020</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./pricing.html">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">Created by Colton Brighton</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brighton Photography Services</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body class="d-flex flex-column min-vh-100 bg-light">
+    <!-- using navbar from bootstrap to navigate between index.html, pricing.html, and contact.html. -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./images/logo.jpg" 
+          alt="Brighton Photography Logo" 
+        />
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html" aria-selected="false"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pricing.html" aria-selected="true"
+              >Services</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid bg-light">
+      <div class="container">
+        <h1 class="display-4">About us!</h1>
+        <p class="lead">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis
+          risus metus. Nam rhoncus varius laoreet. Vivamus vitae erat sit amet
+          nisi imperdiet varius ut nec turpis. Fusce nec posuere enim. Sed
+          laoreet turpis quis leo bibendum elementum. Proin quis tellus nec
+          magna dignissim commodo in non arcu. Suspendisse nisi dolor, dapibus
+          non nisl et, rhoncus posuere ante. Sed lobortis tortor sit amet erat
+          interdum tincidunt. Quisque sagittis justo vel quam viverra sagittis.
+        </p>
+
+        <p class="lead">
+          Nullam vel feugiat urna. Sed auctor consectetur nisl, nec rhoncus
+          turpis. Suspendisse nibh mi, porta et turpis non, congue accumsan
+          libero. Ut egestas placerat mollis. Suspendisse at sem tellus. Integer
+          eget scelerisque ante, at dignissim velit. Donec a magna purus.
+        </p>
+
+        <p class="lead">
+          Maecenas eget libero eros. Praesent tincidunt bibendum ipsum a
+          malesuada. Vivamus sit amet ligula gravida, iaculis nulla at,
+          consequat erat. Cras efficitur nisi vel ipsum rutrum, id pulvinar erat
+          congue. In hac habitasse platea dictumst. Quisque volutpat odio sem,
+          vitae vulputate risus accumsan quis. Etiam faucibus lorem a ex
+          condimentum, non vulputate lectus blandit. Maecenas luctus metus
+          vulputate malesuada feugiat. Nullam vel consectetur lectus. Sed
+          tristique, lacus at commodo lobortis, arcu mi tempus tortor, non
+          fermentum libero ligula vitae nulla. Proin sapien eros, semper sit
+          amet semper eu, venenatis at nisl. Mauris condimentum fringilla
+          ultricies. Etiam cursus iaculis purus quis auctor. Sed a hendrerit
+          diam.
+        </p>
+      </div>
+    </div>
+
+    <!-- additional navigation options at the bottom of the screen -->
+
+    <footer class="text-center text-white bg-secondary mt-auto">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link disabled text-white" href="#">Brighton Photography ©2020</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./pricing.html">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">Created by Colton Brighton</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
