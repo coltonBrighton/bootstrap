@@ -10,48 +10,47 @@
     />
   </head>
   <body class="d-flex flex-column min-vh-100 bg-light">
-    <!-- using navbar from bootstrap to navigate between index.html, pricing.html, and contact.html. -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <a class="navbar-brand" href="./index.html">
-        <img src="./images/logo.jpg" 
-          alt="Brighton Photography Logo" 
-        />
-      </a>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="./index.html" aria-selected="false"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
+    <!-- using navbar from bootstrap to navigate between index.html, pricing.html, and contact.html. -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img 
+            src="./images/logo.jpg"
+          />
+        </a>
+        <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNavAltMarkup" 
+          aria-controls="navbarNavAltMarkup" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+          <span 
+            class="navbar-toggler-icon">
+          </span>
+        </button>
+        <div 
+          class="collapse navbar-collapse justify-content-end" 
+          id="navbarNavAltMarkup"
+        >
+          <div 
+          class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
             <a class="nav-link" href="./about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pricing.html" aria-selected="true"
-              >Services</a
-            >
-          </li>
-        </ul>
+            <a class="nav-link" href="./pricing.html">Services</a>
+          </div>
+        </div>
       </div>
     </nav>
+    
 
     <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid bg-light">
+    <div class="mt-4 p-5 bg-light rounded">
       <div class="container">
-        <h1 class="display-4">About us!</h1>
+        <h1 class=" display-1">About us!</h1>
         <p class="lead">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis
           risus metus. Nam rhoncus varius laoreet. Vivamus vitae erat sit amet
@@ -91,24 +90,24 @@
     <footer class="text-center text-white bg-secondary mt-auto">
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link disabled text-white" href="#">Brighton Photography ©2020</a>
+          <a class="nav-link disabled text-white " href="#"><small>Brighton Photography ©2020</small></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active text-white" href="./index.html">Home</a>
+          <a class="nav-link active text-white" href="./index.html"><u>Home</u></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="./about.html">About</a>
+          <a class="nav-link text-white" href="./about.html"><u>About</u></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="./pricing.html">Services</a>
+          <a class="nav-link text-white" href="./pricing.html"><u>Services</u></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white" href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">Created by Colton Brighton</a>
+            <a class="nav-link text-white" href="https://www.linkedin.com/in/colton-brighton/"><small>Created by <u>Colton Brighton</small></u></a>
         </li>
       </ul>
     </footer>
 
-    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>

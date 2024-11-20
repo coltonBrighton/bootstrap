@@ -11,119 +11,118 @@
     />
   </head>
   <body class="bg-white d-flex flex-column min-vh-100">
+
     <!-- using navbar from bootstrap to navigate between index.html, pricing.html, and contact.html. -->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <a class="navbar-brand" href="./index.html">
-        <img src="./images/logo.jpg" 
-          alt="Brighton Photography Logo" 
-        />
-      </a>
-
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="./index.html"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img 
+            src="./images/logo.jpg"
+          />
+        </a>
+        <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNavAltMarkup" 
+          aria-controls="navbarNavAltMarkup" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+          <span 
+            class="navbar-toggler-icon">
+          </span>
+        </button>
+        <div 
+          class="collapse navbar-collapse justify-content-end" 
+          id="navbarNavAltMarkup"
+        >
+          <div 
+          class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
             <a class="nav-link" href="./about.html">About</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="./pricing.html">Services</a>
-          </li>
-        </ul>
-        
+          </div>
+        </div>
       </div>
-      
     </nav>
     
-    <div class="jumbotron jumbotron-fluid text-center bg-white">
+    
+
+    <div class="mt-4 p-5 bg-white text-center">
       <div class="container">
-        <hr>
-        <h1 class="display-4">Brighton Photography</h1>
+        <hr />
+        <h1 class="display-1">Brighton Photography</h1>
         <h2 class="lead">Capturing nature is how we nuture</h2>
-        <hr>
+        <hr />
       </div>
     </div>
 
     <!-- using a grid to place images -->
-    <div class="row no-gutters">
+    <div class="row g-0">
       <div class="col-md-3">
-        <div>
+        <div class="card bg-dark p-1">
           <img
             src="./images/dandelion.jpg"
-            class="rounded img-fluid img-thumbnail bg-dark"
+            class="rounded img-fluid card-img-top"
             alt="dandelion with sunset in background"
           />
         </div>
 
-        <div>
+        <div class="card bg-dark p-1">
           <img
             src="./images/doggy.jpg"
-            class="rounded img-fluid img-thumbnail bg-dark"
+            class="rounded img-fluid card-img-top"
             alt="dandelion with sunset in background"
           />
         </div>
       </div>
 
       <div class="col-md-3">
-        <div>
+        <div class="card bg-dark p-1">
           <img
             src="./images/squirrel.jpg"
-            class="rounded img-fluid img-thumbnail bg-dark"
-            alt="dandelion with sunset in background"
+            class="rounded img-fluid card-img-top"
+            alt="a tiny chimpmonk hides among the rocks"
           />
         </div>
 
-        <div>
+        <div class="card bg-dark p-1">
           <img
             src="./images/landscape.jpg"
-            class="rounded img-fluid img-thumbnail bg-dark"
-            alt="dandelion with sunset in background"
+            class="rounded img-fluid card-img-top"
+            alt="image of lake landscape with a boat driving in the disntance"
           />
         </div>
       </div>
       <div class="col-md-3">
-        <div>
+        <div class="card bg-dark p-1">
           <img
-          src="./images/sunset.jpg"
-          class="rounded img-fluid img-thumbnail bg-dark"
-          alt="sun sets grdually behind mountains."
-        />
+            src="./images/sunset.jpg"
+            class="rounded img-fluid card-img-top"
+            alt="sun sets grdually behind mountains."
+          />
         </div>
-        <div>
+        <div class="card bg-dark p-1">
           <img
             src="./images/waterfall.jpg"
-            class="rounded img-fluid img-thumbnail bg-dark"
+            class="rounded img-fluid card-img-top"
             alt="image of a waterfall"
           />
         </div>
       </div>
       <div class="col-md-3">
-        <div>
+        <div class="card bg-dark p-1">
           <img
             src="./images/flowers.jpg"
-            class="rounded img-fluid img-thumbnail bg-dark"
+            class="rounded img-fluid card-img-top"
             alt="image of a hand holding flowers with a beautiful mountain landscape in the background"
           />
         </div>
-        <div>
+        <div class="card bg-dark p-1">
           <img
             src="./images/city-lights.jpg"
-            class="rounded img-fluid img-thumbnail bg-dark"
+            class="rounded img-fluid card-img-top"
             alt="Photo of city at night through a plane window"
           />
         </div>
@@ -132,27 +131,27 @@
 
     <!-- additonal nav options at the bottom of screen -->
 
-    <footer class="text-center bg-secondary mt-auto">
+    <footer class="text-center text-white bg-secondary mt-auto">
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link disabled text-white" href="#">Brighton Photography ©2020</a>
+          <a class="nav-link disabled text-white " href="#"><small>Brighton Photography ©2020</small></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active text-white" href="./index.html">Home</a>
+          <a class="nav-link active text-white" href="./index.html"><u>Home</u></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="./about.html">About</a>
+          <a class="nav-link text-white" href="./about.html"><u>About</u></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="./pricing.html">Services</a>
+          <a class="nav-link text-white" href="./pricing.html"><u>Services</u></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white" href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">Created by Colton Brighton</a>
+            <a class="nav-link text-white" href="https://www.linkedin.com/in/colton-brighton/"><small>Created by <u>Colton Brighton</small></u></a>
         </li>
       </ul>
     </footer>
 
-    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>
