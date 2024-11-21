@@ -4,22 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brighton Photography Services</title>
-    <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.css"
-    />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="styles.css"/>
   </head>
-  <body class="d-flex flex-column min-vh-100 bg-light">
+  <body class="background-lighter d-flex flex-column min-vh-100">
     
     <!-- using navbar from bootstrap to navigate between index.html, pricing.html, and contact.html. -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light background-head ">
+      <div class="container-fluid justify-content-center">
         <a class="navbar-brand" href="./index.html">
-          <img 
-            src="./images/logo.jpg"
+          <img class="shadow mb-2 rounded" src="./images/logo.jpg"
           />
         </a>
+
+        <!-- hamburger menu button expanding and collapsing the navbar -->
+
         <button 
           class="navbar-toggler" 
           type="button" 
@@ -36,11 +36,23 @@
           class="collapse navbar-collapse justify-content-end" 
           id="navbarNavAltMarkup"
         >
-          <div 
-          class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-            <a class="nav-link" href="./about.html">About</a>
-            <a class="nav-link" href="./pricing.html">Services</a>
+
+        <!-- navigation links in navbar to home, about and pricing pages -->
+
+          <div class="navbar-nav">
+            <a 
+              class="nav-link active" 
+              aria-current="page" 
+              href="./index.html">Home</a
+            >
+            <a 
+              class="nav-link" 
+              href="./about.html">About</
+            >
+            <a 
+              class="nav-link" 
+              href="./pricing.html">Services</a
+            >
           </div>
         </div>
       </div>
@@ -49,7 +61,7 @@
 
     <!-- table with packages that are offered for photography services. -->
 
-    <div class="mt-4 p-5 bg-light rounded">
+    <div class="mt-4 p-5 rounded background-light-purple">
       <div class="container">
         <h1 class="display-2 text-center">We offer several packages to choose from!</h1>
       </div>
@@ -144,22 +156,43 @@
       </div>
     </div>
 
-    <!-- Additional navigation options at bottom of screen! -->
+    <!-- nav links so you don't have to scroll up to use the ones at the top of the page -->
 
-    <footer class="text-center text-white bg-secondary mt-auto">
-      <ul class="nav justify-content-center">
+    <footer class="text-center text-white background-foot mt-auto">
+      <ul class="nav justify-content-center d-flex flex-column">
         <li class="nav-item">
-          <a class="nav-link disabled text-white " href="#"><small>Brighton Photography ©2020</small></a>
+          <a 
+            class="nav-link disabled text-white " 
+            href="#">
+            <small>Brighton Photography ©2020</small>
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active text-white" href="./index.html"><u>Home</u></a>
+          <a 
+            class="nav-link active text-white" 
+            href="./index.html">
+
+            <!-- using "<u>" for underlining text for link -->
+
+            <u>Home</u>
+          </a>
         </li>
+
+        <!-- nav links to home, about and services -->
+
         <li class="nav-item">
-          <a class="nav-link text-white" href="./about.html"><u>About</u></a>
+          <a 
+            class="nav-link text-white" 
+            href="./about.html">
+            <u>About</u>
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="./pricing.html"><u>Services</u></a>
         </li>
+
+        <!-- created by statement with link to my linked in page -->
+
         <li class="nav-item">
             <a class="nav-link text-white" href="https://www.linkedin.com/in/colton-brighton/"><small>Created by <u>Colton Brighton</small></u></a>
         </li>
