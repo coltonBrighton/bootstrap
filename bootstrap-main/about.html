@@ -7,55 +7,46 @@
 
     <!-- link to bootstrap -->
 
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="./styles.css"/>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body class="d-flex flex-column min-vh-100 background-lighter">
-
     <!-- using navbar from bootstrap to navigate between index.html, pricing.html, and contact.html. -->
 
     <nav class="navbar navbar-expand-lg navbar-light background-head">
       <div class="container-fluid justify-content-center">
         <a class="navbar-brand" href="./index.html">
-          <img class="shadow mb-2 rounded" src="./images/logo.jpg"/>
+          <img class="shadow mb-2 rounded" src="./images/logo.jpg" />
         </a>
 
         <!-- hamburger menu button expanding and collapsing the navbar -->
 
-        <button 
-          class="navbar-toggler" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#navbarNavAltMarkup" 
-          aria-controls="navbarNavAltMarkup" 
-          aria-expanded="false" 
-          aria-label="Toggle navigation">
-          <span 
-            class="navbar-toggler-icon">
-          </span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"> </span>
         </button>
-        <div 
-          class="collapse navbar-collapse justify-content-end" 
+        <div
+          class="collapse navbar-collapse justify-content-end"
           id="navbarNavAltMarkup"
         >
-
-        <!-- navigation links in navbar to home, about and pricing pages -->
+          <!-- navigation links in navbar to home, about and pricing pages -->
 
           <div class="navbar-nav">
-            <a 
-              class="nav-link active" 
-              aria-current="page" 
-              href="./index.html"
+            <a class="nav-link active" aria-current="page" href="./index.html"
               >Home</a
             >
-            <a 
-              class="nav-link" 
-              href="./about.html">About</a
-            >
-            <a 
-              class="nav-link" 
-              href="./pricing.html">Services</a
-            >
+            <a class="nav-link" href="./about.html">About</a>
+            <a class="nav-link" href="./pricing.html">Services</a>
           </div>
         </div>
       </div>
@@ -65,7 +56,7 @@
 
     <div class="mt-4 p-5 background-lighter rounded">
       <div class="container">
-        <h1 class=" display-1">About us!</h1>
+        <h1 class="display-1">About us!</h1>
         <p class="lead">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis
           risus metus. Nam rhoncus varius laoreet. Vivamus vitae erat sit amet
@@ -105,17 +96,12 @@
     <footer class="text-center text-white background-foot mt-auto">
       <ul class="nav justify-content-center d-flex flex-column">
         <li class="nav-item">
-          <a 
-            class="nav-link disabled text-white " 
-            href="#">
+          <a class="nav-link disabled text-white" href="#">
             <small>Brighton Photography ©2020</small>
           </a>
         </li>
         <li class="nav-item">
-          <a 
-            class="nav-link active text-white" 
-            href="./index.html">
-
+          <a class="nav-link active text-white" href="./index.html">
             <!-- using "<u>" for underlining text for link -->
 
             <u>Home</u>
@@ -125,20 +111,24 @@
         <!-- nav links to home, about and services -->
 
         <li class="nav-item">
-          <a 
-            class="nav-link text-white" 
-            href="./about.html">
+          <a class="nav-link text-white" href="./about.html">
             <u>About</u>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="./pricing.html"><u>Services</u></a>
+          <a class="nav-link text-white" href="./pricing.html"
+            ><u>Services</u></a
+          >
         </li>
 
         <!-- created by statement with link to my linked in page -->
-         
+
         <li class="nav-item">
-            <a class="nav-link text-white" href="https://www.linkedin.com/in/colton-brighton/"><small>Created by <u>Colton Brighton</small></u></a>
+          <a
+            class="nav-link text-white"
+            href="https://www.linkedin.com/in/colton-brighton/"
+            ><small>Created by <u>Colton Brighton</u></small></a
+          >
         </li>
       </ul>
     </footer>

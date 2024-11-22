@@ -4,73 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brighton Photography Services</title>
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="styles.css"/>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="background-lighter d-flex flex-column min-vh-100">
-    
     <!-- using navbar from bootstrap to navigate between index.html, pricing.html, and contact.html. -->
 
-    <nav class="navbar navbar-expand-lg navbar-light background-head ">
+    <nav class="navbar navbar-expand-lg navbar-light background-head">
       <div class="container-fluid justify-content-center">
         <a class="navbar-brand" href="./index.html">
-          <img class="shadow mb-2 rounded" src="./images/logo.jpg"
-          />
+          <img class="shadow mb-2 rounded" src="./images/logo.jpg" />
         </a>
 
         <!-- hamburger menu button expanding and collapsing the navbar -->
 
-        <button 
-          class="navbar-toggler" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#navbarNavAltMarkup" 
-          aria-controls="navbarNavAltMarkup" 
-          aria-expanded="false" 
-          aria-label="Toggle navigation">
-          <span 
-            class="navbar-toggler-icon">
-          </span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"> </span>
         </button>
-        <div 
-          class="collapse navbar-collapse justify-content-end" 
+        <div
+          class="collapse navbar-collapse justify-content-end"
           id="navbarNavAltMarkup"
         >
-
-        <!-- navigation links in navbar to home, about and pricing pages -->
+          <!-- navigation links in navbar to home, about and pricing pages -->
 
           <div class="navbar-nav">
-            <a 
-              class="nav-link active" 
-              aria-current="page" 
-              href="./index.html">Home</a
+            <a class="nav-link active" aria-current="page" href="./index.html"
+              >Home</a
             >
-            <a 
-              class="nav-link" 
-              href="./about.html">About</
-            >
-            <a 
-              class="nav-link" 
-              href="./pricing.html">Services</a
-            >
+            <a class="nav-link" href="./about.html">About</a>
+            <a class="nav-link" href="./pricing.html">Services</a>
           </div>
         </div>
       </div>
     </nav>
-    
 
     <!-- table with packages that are offered for photography services. -->
 
     <div class="mt-4 p-5 rounded background-light-purple">
       <div class="container">
-        <h1 class="display-2 text-center">We offer several packages to choose from!</h1>
+        <h1 class="display-2 text-center">
+          We offer several packages to choose from!
+        </h1>
       </div>
     </div>
-    
+
     <table class="table table-striped text-center table-responsive-md m-auto">
       <thead>
         <tr>
-          <th scope="col"> </th>
+          <th scope="col"></th>
           <th scope="col">Portrait</th>
           <th scope="col">Family Photos</th>
           <th scope="col">Landscape</th>
@@ -96,26 +88,41 @@
           <td>Varies Depending on Photo</td>
         </tr>
         <tr>
-          <th scope="row"> </th>
+          <th scope="row"></th>
 
           <!-- insert modal buttons into the table -->
 
           <td>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" 
-              data-bs-target="#orderModal" data-bs-whatever="portrait"
-              >Order Now!
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#orderModal"
+              data-bs-whatever="portrait"
+            >
+              Order Now!
             </button>
           </td>
           <td>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" 
-              data-bs-target="#orderModal" data-bs-whatever="family"
-              >Order Now!
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#orderModal"
+              data-bs-whatever="family"
+            >
+              Order Now!
             </button>
           </td>
           <td>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" 
-              data-bs-target="#orderModal, familyPictureModal" data-bs-whatever="landscape"
-              >Order Now!
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#orderModal, familyPictureModal"
+              data-bs-whatever="landscape"
+            >
+              Order Now!
             </button>
           </td>
         </tr>
@@ -124,32 +131,52 @@
 
     <!-- Modal requesting name/email address and a message to send an order for photos -->
 
-    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModal" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="orderModal"
+      tabindex="-1"
+      aria-labelledby="orderModal"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title fs-5" id="orderModal">New Order</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-            </button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body">
             <form>
               <div class="mb-3">
                 <label for="your-name" class="col-form-label">Your name:</label>
-                <input type="text" class="form-control" id="your-name">
+                <input type="text" class="form-control" id="your-name" />
               </div>
               <div class="mb-3">
-                <label for="your-email" class="col-form-label">Your email:</label>
-                <input type="text" class="form-control" id="your-email">
+                <label for="your-email" class="col-form-label"
+                  >Your email:</label
+                >
+                <input type="text" class="form-control" id="your-email" />
               </div>
               <div class="mb-3">
-                <label for="message-text" class="col-form-label">Message:</label>
+                <label for="message-text" class="col-form-label"
+                  >Message:</label
+                >
                 <textarea class="form-control" id="message-text"></textarea>
               </div>
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
             <button type="button" class="btn btn-primary">Send message</button>
           </div>
         </div>
@@ -161,17 +188,12 @@
     <footer class="text-center text-white background-foot mt-auto">
       <ul class="nav justify-content-center d-flex flex-column">
         <li class="nav-item">
-          <a 
-            class="nav-link disabled text-white " 
-            href="#">
+          <a class="nav-link disabled text-white" href="#">
             <small>Brighton Photography ©2020</small>
           </a>
         </li>
         <li class="nav-item">
-          <a 
-            class="nav-link active text-white" 
-            href="./index.html">
-
+          <a class="nav-link active text-white" href="./index.html">
             <!-- using "<u>" for underlining text for link -->
 
             <u>Home</u>
@@ -181,20 +203,24 @@
         <!-- nav links to home, about and services -->
 
         <li class="nav-item">
-          <a 
-            class="nav-link text-white" 
-            href="./about.html">
+          <a class="nav-link text-white" href="./about.html">
             <u>About</u>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="./pricing.html"><u>Services</u></a>
+          <a class="nav-link text-white" href="./pricing.html"
+            ><u>Services</u></a
+          >
         </li>
 
         <!-- created by statement with link to my linked in page -->
 
         <li class="nav-item">
-            <a class="nav-link text-white" href="https://www.linkedin.com/in/colton-brighton/"><small>Created by <u>Colton Brighton</small></u></a>
+          <a
+            class="nav-link text-white"
+            href="https://www.linkedin.com/in/colton-brighton/"
+            ><small>Created by <u>Colton Brighton</u></small></a
+          >
         </li>
       </ul>
     </footer>

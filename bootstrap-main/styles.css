@@ -1,16 +1,11 @@
 .background-lighter {
-    background-color: #BCB88A;
+  background-color: #ddd5f3;
 }
 
 .background-head {
-    background-color: #A7A88A;
+  background-color: #ebe8fc;
 }
 
 .background-foot {
-    background-color: #474241;
-}
-
-.img-size {
-    height: 100%;
-    width: 100%
+  background-color: #1f153d;
 }
