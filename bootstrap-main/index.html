@@ -17,7 +17,7 @@
     <!-- using navbar from bootstrap to navigate between index.html, pricing.html, and contact.html. -->
 
     <nav class="navbar navbar-expand-md navbar-light background-head">
-      <div class="container-fluid justify-content-center">
+      <div class="container-fluid">
         <a class="navbar-brand" href="./index.html">
           <img class="shadow mb-2 rounded" src="./images/logo.jpg" />
         </a>
@@ -40,7 +40,7 @@
           id="navbarNavAltMarkup"
         >
           <!-- navigation links in navbar to home, about and pricing pages -->
-          <div class="navbar-nav">
+          <div class="navbar-nav nav-underline">
             <a class="nav-link active" aria-current="page" href="./index.html"
               >Home</a
             >
@@ -53,82 +53,77 @@
 
     <!-- Making what used to be refered to bootstrap v4 as a jumbotron -->
     <div class="container">
-      <div class="p-5 text-center shadow bg-body rounded my-3">
-        <div class="container">
-          <hr />
-          <h1 class="display-1">Brighton Photography</h1>
-          <h2 class="lead">Capturing nature is how we nuture</h2>
-          <hr />
-        </div>
+      <div class="text-center my-5">
+        <hr />
+        <h1 class="display-1">Brighton Photography</h1>
+        <h2 class="lead">Capturing nature is how we nuture</h2>
+        <hr />
       </div>
-    </div>
-
-    <!-- using bootstrap grid to place images -->
-    <div class="container">
+      <!-- using bootstrap grid to place images -->
       <div class="row">
-        <div class="col-lg-3">
-          <div class="bg-light shadow-lg mb-3 p-2 rounded">
+        <div class="col-lg-3 g-2">
+          <div class="card rounded shadow-lg mb-2 p-2">
             <img
               src="./images/dandelion.jpg"
-              class="rounded img-fluid card-body shadow-inset mb-5"
+              class="card-img img-fluid mb-5"
               alt="dandelion with sunset in background"
             />
           </div>
 
-          <div class="bg-light shadow-lg mb-3 p-2 rounded-3">
-            <img
-              src="./images/doggy.jpg"
-              class="rounded-3 img-fluid shadow-inset mb-5"
-              alt="dandelion with sunset in background"
-            />
+          <div class="card rounded shadow-lg p-2 mb-2">
+              <img
+                src="./images/doggy.jpg"
+                class="card-img img-fluid mb-5"
+                alt="a dog on a leash being walked down a hiking trail"
+              />
           </div>
         </div>
 
-        <div class="col-lg-3">
-          <div class="bg-light shadow-lg mb-3 p-2 rounded">
+        <div class="col-lg-3 g-2">
+          <div class="card rounded shadow-lg mb-2 p-2">
             <img
               src="./images/squirrel.jpg"
-              class="rounded img-fluid card-body shadow-inset mb-5"
+              class="card-img img-fluid mb-5"
               alt="a tiny chimpmonk hides among the rocks"
             />
           </div>
 
-          <div class="bg-light shadow-lg mb-3 p-2 rounded">
+          <div class="card shadow-lg rounded mb-2 p-2">
             <img
               src="./images/landscape.jpg"
-              class="rounded img-fluid card-body shadow-inset mb-5"
+              class="card-img img-fluid mb-5"
               alt="image of lake landscape with a boat driving in the disntance"
             />
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="bg-light shadow-lg mb-3 p-2 rounded">
+        <div class="col-lg-3 g-2">
+          <div class="card shadow-lg rounded mb-2 p-2">
             <img
               src="./images/sunset.jpg"
-              class="rounded img-fluid card-body shadow-inset mb-5"
+              class="card-img img-fluid mb-5"
               alt="sun sets grdually behind mountains."
             />
           </div>
-          <div class="bg-light shadow-lg mb-3 p-2 rounded">
+          <div class="card shadow-lg rounded mb-2 p-2">
             <img
               src="./images/waterfall.jpg"
-              class="rounded img-fluid card-body shadow-inset mb-5"
+              class="card-img img-fluid mb-5"
               alt="image of a waterfall"
             />
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="bg-light shadow-lg mb-3 p-2 rounded">
+        <div class="col-lg-3 g-2">
+          <div class="card shadow-lg rounded mb-2 p-2">
             <img
               src="./images/flowers.jpg"
-              class="rounded img-fluid card-body shadow-inset mb-5"
+              class="card-img img-fluid mb-5"
               alt="image of a hand holding flowers with a beautiful mountain landscape in the background"
             />
           </div>
-          <div class="bg-light shadow-lg mb-3 p-2 rounded">
+          <div class="card shadow-lg rounded mb-2 p-2">
             <img
               src="./images/city-lights.jpg"
-              class="rounded img-fluid card-body shadow-inset mb-5"
+              class="card-img img-fluid mb-5"
               alt="Photo of city at night through a plane window"
             />
           </div>

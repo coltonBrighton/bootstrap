@@ -38,12 +38,12 @@
         >
           <!-- navigation links in navbar to home, about and pricing pages -->
 
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="./index.html"
+          <div class="navbar-nav nav-underline">
+            <a class="nav-link" aria-current="page" href="./index.html"
               >Home</a
             >
             <a class="nav-link" href="./about.html">About</a>
-            <a class="nav-link" href="./pricing.html">Services</a>
+            <a class="nav-link active" href="./pricing.html">Services</a>
           </div>
         </div>
       </div>
@@ -58,76 +58,78 @@
         </h1>
       </div>
     </div>
+    <div class="container">
 
-    <table class="table table-striped text-center table-responsive-md m-auto">
-      <thead>
-        <tr>
-          <th scope="col"></th>
-          <th scope="col">Portrait</th>
-          <th scope="col">Family Photos</th>
-          <th scope="col">Landscape</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">Session Length:</th>
-          <td>1 Hour Session</td>
-          <td>2 Hour Session</td>
-          <td>Per Photo</td>
-        </tr>
-        <tr>
-          <th scope="row">Location:</th>
-          <td>Studio</td>
-          <td>Location within 2 hour drive</td>
-          <td>Based on Print</td>
-        </tr>
-        <tr>
-          <th scope="row">Price</th>
-          <td>$150</td>
-          <td>$300</td>
-          <td>Varies Depending on Photo</td>
-        </tr>
-        <tr>
-          <th scope="row"></th>
+      <table class="table text-center table-responsive m-auto table-striped">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Portrait</th>
+            <th scope="col">Family Photos</th>
+            <th scope="col">Landscape</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <th scope="row">Session Length:</th>
+            <td>1 Hour Session</td>
+            <td>2 Hour Session</td>
+            <td>Per Photo</td>
+          </tr>
+          <tr>
+            <th scope="row">Location:</th>
+            <td>Studio</td>
+            <td>Location within 2 hour drive</td>
+            <td>Based on Print</td>
+          </tr>
+          <tr>
+            <th scope="row">Price</th>
+            <td>$150</td>
+            <td>$300</td>
+            <td>Varies Depending on Photo</td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
 
-          <!-- insert modal buttons into the table -->
+            <!-- insert modal buttons into the table -->
 
-          <td>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#orderModal"
-              data-bs-whatever="portrait"
-            >
-              Order Now!
-            </button>
-          </td>
-          <td>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#orderModal"
-              data-bs-whatever="family"
-            >
-              Order Now!
-            </button>
-          </td>
-          <td>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#orderModal, familyPictureModal"
-              data-bs-whatever="landscape"
-            >
-              Order Now!
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#orderModal"
+                data-bs-whatever="portrait"
+              >
+                Order Now!
+              </button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#orderModal"
+                data-bs-whatever="family"
+              >
+                Order Now!
+              </button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#orderModal, familyPictureModal"
+                data-bs-whatever="landscape"
+              >
+                Order Now!
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <!-- Modal requesting name/email address and a message to send an order for photos -->
 
